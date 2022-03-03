@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2067402452, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
+  m_Name: VuforiaConfiguration
+  m_EditorClassIdentifier: 
+  vuforia:
+    vuforiaLicenseKey: 
+    ufoLicenseKey: QVNSbE05WC8vLy8vQUFBQUtQdHVyQVlHalV1UW9uTUwwTzAyL3JBaDY5QkJvYzM2aVF6Q2x3ZzZqZ2hqcDJEZUgxZnhMb1VOL2JjdStNU3pJWlF6Nk84dGNsano3T2tZQjh4ejNDSUpKVkdwRG90TUd4S2lsL1kxNGx1TnBNbnE2THpUUERRc0tZTmlnRnYyR3VKQUREOXRQb2gvOG5qNktUK1I2M3cyaFZhb0VVWCtMSncyUFBxVHFPUmZDNEZzQ3Fyc2tDQjltZ2s2dEIrbDAvNGxVQWhaZGQ2bUE5NnhYcWlLWHVsOXlTZ3BjR3NKK2dVTXVWKzRlRjJqeDI1VHg0b2JkSVBOTzh6cXhma3U2OXRnSFNtNUZ3QTJNS0tuSEZ6dnpXY0FTV2dKY1hWbEZWNFdYSjBqQnNUMS9kY2g4c1ZNZzg2bmxzdkxLSVVYY1JsOTE3VXFsMXVJRWlEYnNUTUVWUnBRdzdpZEVqUW1jTEpWd0ZHcEl4VUc=
+    delayedInitialization: 0
+    cameraFocusModeSetting: 2
+    cameraDeviceModeSetting: -1
+    maxSimultaneousImageTargets: 1
+    maxSimultaneousObjectTargets: 1
+    virtualSceneScaleFactor: 1
+    useDelayedLoadingObjectTargets: 0
+    modelTargetRecoWhileExtendedTracked: 1
+    shareRecordingsInITunes: 0
+    version: 10.5.5
+    eulaAcceptedVersions: '{"Values":["10.4","0.0","10.5"]}'
+  database:
+    disableModelExtraction: 0
+  shaders:
+    depthMaskShader: {fileID: 4800000, guid: 1ce7eb78425fb1540838bc9d5d95857a, type: 3}
+  videoBackground:
+    numDivisions: 2
+    videoBackgroundShader: {fileID: 4800000, guid: f40623b353e2f1943b1b3ba42975db7a, type: 3}
+    unlitShader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+    videoBackgroundEnabled: 1
+  deviceTracker:
+    autoStartTracker: 1
+    arcoreRequirement: 1
+    autoImportArcore: 1
+    thirdPartyARCoreClientDetected: 0
+  playmode:
+    mSequencePath: 
+    playModeType: 0
+  webcam:
+    renderTextureLayer: 30
+  packageInformation:
+    ARFoundationVersion: 
