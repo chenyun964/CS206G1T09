@@ -73,3 +73,8 @@ crashlytics-build.properties
 
 # Large file
 /Packages
+ProjectSettings/DeviceSimulatorSettings.asset
+.DS_Store
+ProjectSettings/ProjectVersion.txt
+ProjectSettings/ProjectVersion.txt
+ProjectSettings/ProjectVersion.txt
