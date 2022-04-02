@@ -17,7 +17,11 @@ public class SplashScript : MonoBehaviour
         
     }
 
-    public void MoveToScene(int id){
-        SceneManager.LoadScene(id);
+    public void toLogin(){
+        SceneManager.LoadScene("LoginScreen");
+    }
+
+    public void toRegister(){
+        SceneManager.LoadScene("SignupScreen");
     }
 }
