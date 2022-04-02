@@ -78,9 +78,8 @@ public class QuizManager : MonoBehaviour
     {
         if(QnA.Count > 0)
         {
-            currentQuestion = Random.Range(0, QnA.Count);
-
-            QuestionTxt.text = QnA[currentQuestion].Question;
+            int count = 0;
+            QuestionTxt.text = QnA[count++].Question;
             SetAnswers();
         }
         else
