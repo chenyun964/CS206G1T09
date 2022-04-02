@@ -50,4 +50,12 @@ public class DetailScript : MonoBehaviour
     public void toHome(){
          SceneManager.LoadScene("HomeScreen");
     }
+
+    public void toQuiz(){
+         SceneManager.LoadScene("QuizScreen");
+    }
+
+    public void toLesson(){
+         SceneManager.LoadScene("LessonScreen");
+    }
 }

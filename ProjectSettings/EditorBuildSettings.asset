@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/QuestionScreen.unity
     guid: b3c902ff8a54a4e7b9f3d4a5753d3fc7
+  - enabled: 1
+    path: Assets/Scenes/LessonScreen.unity
+    guid: b63f2e787f7e3d049be909825781fe80
   m_configObjects: {}
