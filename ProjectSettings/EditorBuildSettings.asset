@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/LoginScreen.unity
     guid: 11409eded1d47e0449133d404532ea3d
   - enabled: 1
-    path: Assets/Scenes/HomeScreen.unity
+    path: Assets/Scenes/HomePageScreen.unity
     guid: 78d366e993160894ca7bd9d4c6a6b391
   - enabled: 1
     path: Assets/Scenes/SplashScene.unity
