@@ -78,8 +78,8 @@ public class QuizManager : MonoBehaviour
     {
         if(QnA.Count > 0)
         {
-            int count = 0;
-            QuestionTxt.text = QnA[count++].Question;
+            int qnaCount = 0;
+            QuestionTxt.text = QnA[qnaCount++].Question;
             SetAnswers();
         }
         else
