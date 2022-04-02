@@ -35,7 +35,7 @@ public class SignupScript : MonoBehaviour
     public void ValidateSignup(){
         if (username != "" && email != "" && (password == confirmPassword)){
             print("Signup Success");
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene("HomeScreen");
         } else {
 
         }

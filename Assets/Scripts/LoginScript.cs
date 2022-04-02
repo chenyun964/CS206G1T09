@@ -25,7 +25,7 @@ public class LoginScript:MonoBehaviour
     public void ValidateLogin(){
         if (Username != "" && Password != "") {
             print("Login Success");
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene("HomeScreen");
         } else {
 
         }
