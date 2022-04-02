@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class HomeScript : MonoBehaviour
 {
@@ -15,9 +14,5 @@ public class HomeScript : MonoBehaviour
     void Update()
     {
         
-    }
-
-    public void goDetail(){
-        SceneManager.LoadScene("DetailScreen");
     }
 }

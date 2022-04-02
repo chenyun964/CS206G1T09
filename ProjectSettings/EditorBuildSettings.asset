@@ -14,10 +14,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SplashScene.unity
     guid: 3740b2aa78d85454b9097e655131e794
-  - enabled: 1
-    path: Assets/Scenes/SignupScreen.unity
-    guid: 7cefd62f08ebd8d4aad84494f3934c5f
-  - enabled: 1
-    path: Assets/Scenes/DetailScreen.unity
-    guid: 5917a98554ea3d34d976c5091c5644c2
   m_configObjects: {}
