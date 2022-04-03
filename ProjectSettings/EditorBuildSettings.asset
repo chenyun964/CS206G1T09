@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LessonScreen.unity
     guid: b63f2e787f7e3d049be909825781fe80
+  - enabled: 1
+    path: Assets/Scenes/ArScreen.unity
+    guid: 602b20a0c9ba76e4ca5c0576d10e1da6
   m_configObjects: {}

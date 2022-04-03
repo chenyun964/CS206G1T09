@@ -54,4 +54,12 @@ public class ModelManager : MonoBehaviour
     public void toDetail(){
         SceneManager.LoadScene("DetailScreen");
     }
+
+    public void toAr(){
+        SceneManager.LoadScene("ArScreen");
+    }
+
+    public void to3d(){
+        SceneManager.LoadScene("LessonScreen");
+    }
 }
