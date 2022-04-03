@@ -10,6 +10,8 @@ public class AnswerScript : MonoBehaviour
 
     public Color startColor;
 
+    public Sprite def;
+
     private void Start()
     {
         startColor = GetComponent<Image>().color;
@@ -20,13 +22,11 @@ public class AnswerScript : MonoBehaviour
         if(isCorrect)
         {
             GetComponent<Image>().color = Color.green;
-            Debug.Log("Correct Answer");
             quizManager.correct();
         }
         else
         {
             GetComponent<Image>().color = Color.red;
-            Debug.Log("Wrong Answer");
             quizManager.wrong();
         }
     }

@@ -20,4 +20,8 @@ public class QuizScript : MonoBehaviour
     public void toQuiz(){
         SceneManager.LoadScene("QuestionScreen");
     }
+
+    public void toDetail(){
+        SceneManager.LoadScene("DetailScreen");
+    }
 }

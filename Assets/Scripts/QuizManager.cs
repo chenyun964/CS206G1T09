@@ -18,6 +18,8 @@ public class QuizManager : MonoBehaviour
     public Text totalQnsTxt;
     public Text ScoreTxt;
 
+    public Sprite def;
+
     int totalQuestions = 0;
     public int score;
 
@@ -58,7 +60,11 @@ public class QuizManager : MonoBehaviour
 
     IEnumerator waitForNext()
     {
-        yield return new WaitForSeconds(1);
+        for (int i = 0; i < options.Length; i++)
+        {
+            options[i].GetComponent<Button>().interactable = false;
+        }
+        yield return new WaitForSeconds(1.5f);
         generateQuestion();
     }
 
@@ -66,7 +72,7 @@ public class QuizManager : MonoBehaviour
     {
         for (int i = 0; i < options.Length; i++)
         {
-            options[i].GetComponent<Image>().color = options[i].GetComponent<AnswerScript>().startColor;
+            options[i].GetComponent<Image>().sprite = options[i].GetComponent<AnswerScript>().def;
             options[i].GetComponent<AnswerScript>().isCorrect = false;
             options[i].transform.GetChild(0).GetComponent<Text>().text = QnA[currentQuestion].Answers[i];
 
@@ -79,6 +85,11 @@ public class QuizManager : MonoBehaviour
 
     void generateQuestion()
     {
+        for (int i = 0; i < options.Length; i++)
+        {
+            options[i].GetComponent<Button>().interactable = true;
+            options[i].GetComponent<Image>().color = options[i].GetComponent<AnswerScript>().startColor;
+        }
         if (QnA.Count > 0)
         {
             int qnaCount = 0;
@@ -91,5 +102,9 @@ public class QuizManager : MonoBehaviour
             Debug.Log("Out of Questions");
             GameOver();
         }
+    }
+
+    public void toDetail(){
+         SceneManager.LoadScene("DetailScreen");
     }
 }
