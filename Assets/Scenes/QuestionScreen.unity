@@ -138,7 +138,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &100414931
 RectTransform:
   m_ObjectHideFlags: 0
@@ -727,9 +727,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1265440451}
-        m_TargetAssemblyTypeName: AnswerScript, Assembly-CSharp
-        m_MethodName: Answer
+      - m_Target: {fileID: 351832536}
+        m_TargetAssemblyTypeName: QuizManager, Assembly-CSharp
+        m_MethodName: retry
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -889,17 +889,44 @@ MonoBehaviour:
   - Question: Question 1
     Answers:
     - A
-    - B
-    - C
-    - D
-    CorrectAnswer: 0
+    - G
+    - T
+    - N
+    CorrectAnswer: 1
+    sprite: {fileID: 21300000, guid: 261a6f82b9dad4168a240b6b6469ef48, type: 3}
   - Question: Question 2
     Answers:
     - A
     - B
+    - R
+    - Y
+    CorrectAnswer: 2
+    sprite: {fileID: 21300000, guid: f3a4a8b28284945bdac78c413be9430e, type: 3}
+  - Question: Question 3
+    Answers:
+    - P
+    - Q
     - C
     - D
-    CorrectAnswer: 1
+    CorrectAnswer: 3
+    sprite: {fileID: 21300000, guid: 8e89a015fb6ce47c9ad3d62762b675fa, type: 3}
+  - Question: Question 4
+    Answers:
+    - Y
+    - R
+    - V
+    - D
+    CorrectAnswer: 4
+    sprite: {fileID: 21300000, guid: f267ad70eaa254dbc965c7911eae0d35, type: 3}
+  - Question: Question 5
+    Answers:
+    - G
+    - E
+    - G
+    - C
+    CorrectAnswer: 2
+    sprite: {fileID: 21300000, guid: 544b254ef510444fcbf7bd715c5d9623, type: 3}
+  orignial: {fileID: 360604889}
   options:
   - {fileID: 2024110602}
   - {fileID: 1892184399}
@@ -909,7 +936,8 @@ MonoBehaviour:
   Quizpanel: {fileID: 1725095627}
   GoPanel: {fileID: 100414930}
   QuestionTxt: {fileID: 935322576}
-  ScoreTxt: {fileID: 102047362}
+  totalQnsTxt: {fileID: 102047362}
+  ScoreTxt: {fileID: 1103502504}
   score: 0
 --- !u!4 &351832537
 Transform:
@@ -2283,9 +2311,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 351832536}
-        m_TargetAssemblyTypeName: QuizManager, Assembly-CSharp
-        m_MethodName: retry
+      - m_Target: {fileID: 1265440451}
+        m_TargetAssemblyTypeName: AnswerScript, Assembly-CSharp
+        m_MethodName: Answer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2635,7 +2663,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1265440451}
+      - m_Target: {fileID: 1486298093}
         m_TargetAssemblyTypeName: AnswerScript, Assembly-CSharp
         m_MethodName: Answer
         m_Mode: 1
@@ -2946,7 +2974,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1265440451}
+      - m_Target: {fileID: 1892184404}
         m_TargetAssemblyTypeName: AnswerScript, Assembly-CSharp
         m_MethodName: Answer
         m_Mode: 1
@@ -3172,7 +3200,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1265440451}
+      - m_Target: {fileID: 2024110607}
         m_TargetAssemblyTypeName: AnswerScript, Assembly-CSharp
         m_MethodName: Answer
         m_Mode: 1

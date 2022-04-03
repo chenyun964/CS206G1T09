@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class QuizManager : MonoBehaviour
 {
     public List<QuestionAndAnswers> QnA;
+    public Image orignial;
     public GameObject[] options;
     public int currentQuestion;
 
@@ -14,6 +15,7 @@ public class QuizManager : MonoBehaviour
     public GameObject GoPanel;
 
     public Text QuestionTxt;
+    public Text totalQnsTxt;
     public Text ScoreTxt;
 
     int totalQuestions = 0;
@@ -35,7 +37,8 @@ public class QuizManager : MonoBehaviour
     {
         Quizpanel.SetActive(false);
         GoPanel.SetActive(true);
-        ScoreTxt.text = score + "/" + totalQuestions;
+        totalQnsTxt.text = "out of " + totalQuestions;
+        ScoreTxt.text = "" + score;
     }
 
     public void correct()
@@ -66,8 +69,8 @@ public class QuizManager : MonoBehaviour
             options[i].GetComponent<Image>().color = options[i].GetComponent<AnswerScript>().startColor;
             options[i].GetComponent<AnswerScript>().isCorrect = false;
             options[i].transform.GetChild(0).GetComponent<Text>().text = QnA[currentQuestion].Answers[i];
-            
-            if(QnA[currentQuestion].CorrectAnswer == i+1)
+
+            if (QnA[currentQuestion].CorrectAnswer == i + 1)
             {
                 options[i].GetComponent<AnswerScript>().isCorrect = true;
             }
@@ -76,10 +79,11 @@ public class QuizManager : MonoBehaviour
 
     void generateQuestion()
     {
-        if(QnA.Count > 0)
+        if (QnA.Count > 0)
         {
             int qnaCount = 0;
-            QuestionTxt.text = QnA[qnaCount++].Question;
+            QuestionTxt.text = QnA[qnaCount].Question;
+            orignial.sprite = QnA[qnaCount++].sprite;
             SetAnswers();
         }
         else
