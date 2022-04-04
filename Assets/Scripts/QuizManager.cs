@@ -93,7 +93,7 @@ public class QuizManager : MonoBehaviour
         if (QnA.Count > 0)
         {
             int qnaCount = 0;
-            QuestionTxt.text = QnA[qnaCount].Question;
+            QuestionTxt.text = QnA[qnaCount].Question + ": What is this sign mean?";
             orignial.sprite = QnA[qnaCount++].sprite;
             SetAnswers();
         }
